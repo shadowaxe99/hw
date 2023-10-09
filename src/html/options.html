@@ -1,0 +1,38 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Options</title>
+    <link rel="stylesheet" type="text/css" href="../css/options.css">
+</head>
+<body>
+    <div id="settingsView">
+        <h1>Settings</h1>
+        <form id="settingsForm">
+            <fieldset>
+                <legend>Reminder Settings</legend>
+                <label for="reminderToggle">Enable Reminders:</label>
+                <input type="checkbox" id="reminderToggle" name="reminderToggle">
+                <label for="reminderTime">Reminder Time:</label>
+                <input type="time" id="reminderTime" name="reminderTime">
+            </fieldset>
+            <fieldset>
+                <legend>External AI Services</legend>
+                <label for="mathSolver">Math Solver:</label>
+                <select id="mathSolver" name="mathSolver">
+                    <option value="wolframAlpha">Wolfram Alpha</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <label for="writingAssistant">Writing Assistant:</label>
+                <select id="writingAssistant" name="writingAssistant">
+                    <option value="grammarly">Grammarly</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </fieldset>
+            <input type="submit" value="Save Settings">
+        </form>
+    </div>
+    <script src="../js/options.js"></script>
+</body>
+</html>
+```
