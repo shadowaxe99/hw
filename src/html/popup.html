@@ -1,0 +1,50 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework AI Agent</title>
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+</head>
+<body>
+    <div id="dashboardView">
+        <h1>Dashboard</h1>
+        <div id="assignmentsContainer"></div>
+    </div>
+
+    <div id="assignmentView" style="display: none;">
+        <h1>Assignment Details</h1>
+        <div id="assignmentDetailsContainer"></div>
+        <button id="backToDashboard">Back to Dashboard</button>
+    </div>
+
+    <div id="settingsView" style="display: none;">
+        <h1>Settings</h1>
+        <form id="settingsForm">
+            <label for="reminderSettings">Reminder Settings:</label>
+            <select id="reminderSettings">
+                <option value="off">Off</option>
+                <option value="on">On</option>
+            </select>
+            <label for="calendarIntegration">Calendar Integration:</label>
+            <select id="calendarIntegration">
+                <option value="off">Off</option>
+                <option value="on">On</option>
+            </select>
+            <label for="aiPlatformPreference">Preferred AI Platform:</label>
+            <select id="aiPlatformPreference">
+                <option value="wolframAlpha">Wolfram Alpha</option>
+                <option value="grammarly">Grammarly</option>
+            </select>
+            <input type="submit" value="Save Settings">
+        </form>
+    </div>
+
+    <div id="reminderNotification" style="display: none;">
+        <h1>Reminder</h1>
+        <p id="reminderText"></p>
+    </div>
+
+    <script src="../js/popup.js"></script>
+</body>
+</html>
+```
